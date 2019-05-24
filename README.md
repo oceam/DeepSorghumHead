@@ -27,6 +27,7 @@ The download link will be sent to your email once the form is completed.
 
 1. For Training (from scratch or using pre-trained model):
 <<<<<<< HEAD
+<<<<<<< HEAD
 CUDA_VISIBLE_DEVICES=<### ENTER GPU DEVICE ID ###> python train_custom.py --backbone resnet50 --weights <### ENTER PATH TO PRE_TRAINED MODEL WEIGHTS ###> --batch-size 10 --epochs 200 --steps <### NUMBER OF STEPS - THIS IS DETERMINED BY YOUR TRAINING DATA SIZE AND BATCH SIZE, STEPS = TRAINING DATA SIZE/BATCH SIZE ###> --snapshot-path <### ENTER PATH TO SAVE NEW MODEL WEIGHTS ###> --tensorboard-dir <### ENTER TENSORBOARD LOG PATH ###> --random-transform --image-min-side 1600 --image-max-side 2400 csv <### ENTER PATH TO TRAINING DATA (.csv FILE) ###> <### ENTER PATH TO ANNOTATION MAP (THE 'annotation_map.csv' FILE) ###>
 
 2. For converting your Trained model to an Inference Model (this must be done before you can test your model on test data):
@@ -34,6 +35,8 @@ python convert_model.py <### ENTER PATH TO PRE_TRAINED MODEL WEIGHTS ###> <### E
 
 3. Evaluate the Trained Model on Test Data:
 =======
+=======
+>>>>>>> 2c1cd4bda91a661fd5e375baf8cfc68a12b27afe
 
 CUDA_VISIBLE_DEVICES=<### ENTER GPU DEVICE ID ###> python train_custom.py --backbone resnet50 --weights <### ENTER PATH TO PRE_TRAINED MODEL WEIGHTS ###> --batch-size 10 --epochs 200 --steps <### NUMBER OF STEPS - THIS IS DETERMINED BY YOUR TRAINING DATA SIZE AND BATCH SIZE, STEPS = TRAINING DATA SIZE/BATCH SIZE ###> --snapshot-path <### ENTER PATH TO SAVE NEW MODEL WEIGHTS ###> --tensorboard-dir <### ENTER TENSORBOARD LOG PATH ###> --random-transform --image-min-side 1600 --image-max-side 2400 csv <### ENTER PATH TO TRAINING DATA (.csv FILE) ###> <### ENTER PATH TO ANNOTATION MAP (THE 'annotation_map.csv' FILE) ###>
 
@@ -43,6 +46,9 @@ python convert_model.py <### ENTER PATH TO PRE_TRAINED MODEL WEIGHTS ###> <### E
 
 3. Evaluate the Trained Model on Test Data:
 
+<<<<<<< HEAD
+>>>>>>> 2c1cd4bda91a661fd5e375baf8cfc68a12b27afe
+=======
 >>>>>>> 2c1cd4bda91a661fd5e375baf8cfc68a12b27afe
 python evaluate.py --backbone resnet50 --max-detections 600 --save-path <### ENTER PATH FOR OUTPUT DIRECTORY ###> csv <### ENTER PATH WHERE TEST DATA IS LOCATED (.csv FILE) ###> <### ENTER PATH TO ANNOTATION MAP (THE 'annotation_map.csv' FILE) ###> <### ENTER PATH WHERE TRAINED INFERENCE MODEL IS LOCATED ###>
 

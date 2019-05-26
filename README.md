@@ -65,7 +65,9 @@ Indexing for classes starts at 0. Do not include a background class as it is imp
 
 For example:
 
-SH,0
+cow,0
+cat,1
+bird,2
 
 # Debugging
 Creating your own dataset does not always work out of the box. There is a debug.py tool to help find the most common mistakes.

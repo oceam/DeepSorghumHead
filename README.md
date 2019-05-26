@@ -37,6 +37,39 @@ python convert_model.py <### ENTER PATH TO PRE_TRAINED MODEL WEIGHTS ###> <### E
 
 python evaluate.py --backbone resnet50 --max-detections 600 --save-path <### ENTER PATH FOR OUTPUT DIRECTORY ###> csv <### ENTER PATH WHERE TEST DATA IS LOCATED (.csv FILE) ###> <### ENTER PATH TO ANNOTATION MAP (THE 'annotation_map.csv' FILE) ###> <### ENTER PATH WHERE TRAINED INFERENCE MODEL IS LOCATED ###>
 
-# Base Code originally from https://github.com/fizyr/keras-retinanet
+# Base Code originally from https://github.com/fizyr/keras-retinanet Following is repeated from the README file of the Base Code repository:
+
+# Generating your own custom CSV datasets from images:
+"The CSVGenerator provides an easy way to define your own datasets. It uses two CSV files: one file containing annotations and one file containing a class name to ID mapping.
+
+Annotations format
+The CSV file with annotations should contain one annotation per line. Images with multiple bounding boxes should use one row per bounding box. Note that indexing for pixel values starts at 0. The expected format of each line is:
+
+path/to/image.jpg,x1,y1,x2,y2,class_name
+Some images may not contain any labeled objects. To add these images to the dataset as negative examples, add an annotation where x1, y1, x2, y2 and class_name are all empty:
+
+path/to/image.jpg,,,,,
+A full example:
+
+/data/imgs/img_001.jpg,837,346,981,456,cow
+/data/imgs/img_002.jpg,215,312,279,391,cat
+/data/imgs/img_002.jpg,22,5,89,84,bird
+/data/imgs/img_003.jpg,,,,,
+This defines a dataset with 3 images. img_001.jpg contains a cow. img_002.jpg contains a cat and a bird. img_003.jpg contains no interesting objects/animals.
+
+Class mapping format
+The class name to ID mapping file should contain one mapping per line. Each line should use the following format:
+
+class_name,id
+Indexing for classes starts at 0. Do not include a background class as it is implicit.
+
+For example:
+
+SH,0
+
+# Debugging
+Creating your own dataset does not always work out of the box. There is a debug.py tool to help find the most common mistakes.
+
+Particularly helpful is the --annotations flag which displays your annotations on the images from your dataset. Annotations are colored in green when there are anchors available and colored in red when there are no anchors available. If an annotation doesn't have anchors available, it means it won't contribute to training. It is normal for a small amount of annotations to show up in red, but if most or all annotations are red there is cause for concern. The most common issues are that the annotations are too small or too oddly shaped (stretched out)."
 
 

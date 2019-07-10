@@ -22,14 +22,23 @@ https://docs.google.com/forms/d/e/1FAIpQLSdHQ0aXJUvjba4X5qnqynwFbK3YDlGOwEbUZjkf
 The download link will be sent to your email once the form is completed. 
 
 # Bibtex Info:
+
 @article{ghosal2019weakly,
+  
   title={A Weakly Supervised Deep Learning Framework for Sorghum Head Detection and Counting},
+  
   author={Ghosal, Sambuddha and Zheng, Bangyou and Chapman, Scott C and Potgieter, Andries B and Jordan, David R and Wang, Xuemin and Singh, Asheesh K and Singh, Arti and Hirafuji, Masayuki and Ninomiya, Seishi and others},
+
   journal={Plant Phenomics},
+
   volume={2019},
+  
   pages={1525874},
+  
   year={2019},
+  
   publisher={AAAS}
+
 }
 
 # TRAINED MODEL located in DeepSorghumHead_Keras/bin/inf_models/

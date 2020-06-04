@@ -22,7 +22,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSdHQ0aXJUvjba4X5qnqynwFbK3YDlGOwEbUZjkf
 The download link will be sent to your email once the form is completed. 
 
 # Bibtex Info:
-
+```
 @article{ghosal2019weakly,
   
   title={A Weakly Supervised Deep Learning Framework for Sorghum Head Detection and Counting},
@@ -40,7 +40,7 @@ The download link will be sent to your email once the form is completed.
   publisher={AAAS}
 
 }
-
+```
 # TRAINED MODEL located in DeepSorghumHead_Keras/bin/inf_models/
 
 # Running the ToolChain: (navigate to folder where your .py file is located first, open a terminal window and execute following syntax)

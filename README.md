@@ -2,7 +2,7 @@
 
 This is a support page of paper published at "Plant Phenomics" as an Original Research. 
 
-> Ghosal,S., Zheng, B., Chapman, S.C., Potgieter, A.B., Jordan,D.R., Wang,X., Singh, A.K., Singh, A., Hirafuji, M., Ninomiya, S., Ganapathysubramanian, B., Sarkar, S., Guo, W.(2019, under review). A weakly supervised deep learning framework for sorghum head detection and counting. Plant Phenomics.
+> Ghosal,S., Zheng, B., Chapman, S.C., Potgieter, A.B., Jordan,D.R., Wang,X., Singh, A.K., Singh, A., Hirafuji, M., Ninomiya, S., Ganapathysubramanian, B., Sarkar, S., Guo, W.(2019). A weakly supervised deep learning framework for sorghum head detection and counting. Plant Phenomics.https://spj.sciencemag.org/plantphenomics/2019/1525874/
 
 Please cite this paper below if you used the dataset provided here.
 
